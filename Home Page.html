@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEOCIAL | UPSOCIAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #ff6a00, #ee0979);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .header-text {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .subheader-text {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        .action-btn {
+            background-color: #fff;
+            color: #ee0979;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add smooth fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .interactive-element {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes move {
+            0% {
+                top: 20%;
+                opacity: 1;
+            }
+
+            50% {
+                top: 30%;
+                opacity: 0.6;
+            }
+
+            100% {
+                top: 20%;
+                opacity: 1;
+            }
+        }
+
+        .background-shape {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animateCircle 5s linear infinite;
+        }
+
+        @keyframes animateCircle {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+        }
+
+        /* Scroll-based Parallax Effect */
+        .parallax {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            opacity: 0;
+            animation: fadeInUp 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Additional styling for responsiveness */
+        @media (max-width: 768px) {
+            .header-text {
+                font-size: 2.5rem;
+            }
+
+            .subheader-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Welcome Text Section -->
+        <h1 class="header-text">Welcome to GameOcial</h1>
+        <p class="subheader-text">We are glad to have you here. Explore and enjoy.</p>
+
+        <!-- Action Button -->
+        <button class="action-btn" onclick="location.href='#explore'">Explore Now</button>
+
+        <!-- Interactive Shape -->
+        <div class="background-shape"></div>
+  
+
+
+    </div>
+
+    <!-- Scroll down animation triggered on scroll -->
+    <script>
+        // Scroll Event to trigger Parallax Effect
+        window.addEventListener('scroll', function () {
+            const parallax = document.querySelector('.parallax');
+            const scrollY = window.scrollY;
+            parallax.style.opacity = 1 - scrollY / 600;
+            parallax.style.transform = `translateY(${scrollY * 0.5}px)`;
+        });
+    </script>
+</body>
+
+</html>
