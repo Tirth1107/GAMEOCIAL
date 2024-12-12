@@ -115,7 +115,6 @@
     <div id="password-modal">
         <div class="password-box">
             <h2>Enter Password</h2>
-            <p>password:11072008</p>
             <input type="password" id="password" placeholder="Enter password" />
             <button onclick="checkPassword()">Access</button>
         </div>
@@ -139,21 +138,6 @@
             </nav>
         </header>
 
-    <script>
-        // Correct password (hardcoded for this example)
-        const correctPassword = "11072008"; // Change this to whatever password you want
-
-        // Function to check the entered password
-        function checkPassword() {
-            const enteredPassword = document.getElementById("password").value;
-            if (enteredPassword === correctPassword) {
-                // Hide password modal and show the content
-                document.getElementById("password-modal").style.display = "none";
-                document.getElementById("content").style.display = "block";
-            } else {
-                alert("Incorrect password. Please try again.");
-            }
-        }
-    </script>
+    <script src="play now.js"></script>
 </body>
 </html>
