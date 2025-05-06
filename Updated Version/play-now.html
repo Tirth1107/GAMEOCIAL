@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="google-adsense-account" content="ca-pub-1026299615931648">
+            <title>GamOcial</title>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="play now.css">
+            <link rel="stylesheet" href="section.css">
+            <link rel="stylesheet" href="play now-2.css">
+            <link rel="stylesheet" href="play now-3.css">
+            <link rel="icon" href="Main Logo.PNG">
+
+    </head>
+<body>
+    
+    <div id="content" style="display: none;"></div>
+
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay">
+        <div id="password-box">
+            <input type="text" id="username-input" placeholder="Enter username" autofocus>
+        <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkLogin()">Login</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content1">
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><img src="GAMOCIAL-2-22-2025.png" alt="logo"></a>
+        </header>
+
+        <!-- Main content (hidden initially) -->
+        
+        <div id="welcome-message" style="display: none;"></div> <!-- Welcome message container -->
+        <div id="center"><span id="course-count">0</span></div>
+    
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search Games..." onkeyup="search()">
+        </div>
+          
+
+        <div style="text-align: center; font-size: 18px;">See <a href="#here" class="here">This</a> Before Downloading Games.</div>
+
+        <!--id="whats-new-message" is for showing message when website is updates-->
+        
+             <!-- GTA Series Section -->
+             <div class="section-gta">
+                <h2>GTA Series Collection</h2>
+                <div class="card-container">
+                    <!-- GTA 3 -->
+                    <div class="course-card" id="GTA3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqOpzZTPBG7oFsqSjL90ILR-n4Wifk211ksQ&s" alt="GTA 3">
+                        <div class="course-info">
+                            <h3>GTA 3</h3>
+                            <p>The classic Grand Theft Auto game with a 3D open world.</p>
+                            <button class="button" onclick="downloadGTA3()">Download</button>
+                        </div>
+                    </div>
+                
+                    <!-- GTA Vice City -->
+                    <div class="course-card" id="GTAViceCity">
+                        <img src="https://images.sftcdn.net/images/t_app-cover-m,f_auto/p/c0cab602-96bf-11e6-8561-00163ec9f5fa/1021633432/grand-theft-auto-vice-city-Playing-Grand-Theft-Auto-Vice-City-for-Windows.jpg" alt="GTA Vice City">
+                        <div class="course-info">
+                            <h3>GTA Vice City</h3>
+                            <p>Live the 80s in Vice City, a world full of crime and excitement.</p>
+                            <button class="button" onclick="downloadGTA_ViceCity()">Download</button>
+                        </div>
+                    </div>
+            
+                    <!-- GTA San Andreas -->
+                    <div class="course-card" id="GTASanAndreas">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2HzpUr4XIzSh21H9961NdKfV7pNXz9FOaXA&s" alt="GTA San Andreas">
+                        <div class="course-info">
+                            <h3>GTA San Andreas</h3>
+                            <p>The iconic open-world game that revolutionized the series.</p>
+                            <button class="button" onclick="downloadGTA_SanAndreas()">Download</button>
+                        </div>
+                    </div>
+            
+                    <!-- GTA 4 -->
+                    <div class="course-card" id="GTA4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1rVwbqDzYs0YvdqBU8OwH5VTjU4D63cbcag&s" alt="GTA 4">
+                        <div class="course-info">
+                            <h3>GTA 4</h3>
+                            <p>A gritty, realistic take on the GTA universe with a more mature storyline.</p>
+                            <button class="button" onclick="downloadGTA4()">Download</button>
+                        </div>
+                    </div>
+            
+                    <!-- GTA 5 -->
+                    <div class="course-card" id="GTA5">
+                        <img src="https://www.godisageek.com/wp-content/uploads/GTA-V-Background1.jpg" alt="GTA 5">
+                        <div class="course-info">
+                            <h3>GTA 5</h3>
+                            <p>The latest in the series, with a massive open world and endless fun.</p>
+                            <button class="button" onclick="downloadGTA5()">Download</button>
+                        </div>
+                    </div>
+
+                    <div class="course-card" id="GTA5">
+                        <div class="badge">NEW</div>
+                        <img src="https://www.godisageek.com/wp-content/uploads/GTA-V-Background1.jpg" alt="GTA 5">
+                        <div class="course-info">
+                            <h3>GTA 5 ENHANCED</h3>
+                            <p>The latest in the series, with a massive open world and endless fun with latest graphics.</p>
+                            <button class="button" onclick="downloadGTA5enhance()">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    <div class="section-forza">
+        <h2>Resident Evil Collection</h2>
+        <h4>More Games Will Updated Soon!!</h4>
+        <div class="card-container">
+            <!-- Resident Evil 1 (Remake) -->
+            <div class="course-card" id="">
+                <img src="https://i.ytimg.com/vi/Mz6dSZzV-Ec/maxresdefault.jpg" alt="Resident Evil 1 (Remake)">
+                <div class="course-info">
+                    <h3>Resident Evil 1 (Remake)</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE1Remake()">Download</button>
+                </div>
+            </div>
+        
+            <!-- Resident Evil HD REMASTER -->
+            <div class="course-card" id="">
+                <img src="https://gpstatic.com/acache/27/59/1/uk/t620x300.jpg" alt="Resident Evil HD">
+                <div class="course-info">
+                    <h3>Resident Evil HD REMASTER</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadREHDRemaster()">Download</button>
+                </div>
+            </div>
+        
+            <!-- Resident Evil 2 (OLD) -->
+            <div class="course-card" id="">
+                <img src="https://www.relyonhorror.com/wp-content/uploads/2024/08/Original-Resident-Evil-2-Returns-to-PC-via-GOG.jpg" alt="Resident Evil 2 (OLD)">
+                <div class="course-info">
+                    <h3>Resident Evil 2 (OLD)</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE2Old()">Download</button>
+                </div>
+            </div>
+        
+    
+            <div class="course-card" id="">
+                <img src="https://www.relyonhorror.com/wp-content/uploads/2024/08/Original-Resident-Evil-2-Returns-to-PC-via-GOG.jpg" alt="Resident Evil 2 (Remake)">
+                <div class="course-info">
+                    <h3>Resident Evil 2 (Remake)</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <a href="javascript:void(0);" class="button" onclick="openModal('residentEvil2')">Download</a>
+                </div>
+            </div>
+    
+            <div class="course-card" id="">
+                <img src="https://cdn.wccftech.com/wp-content/uploads/2019/12/Resident-Evil-3-Remake.jpg" alt="Resident Evil 3 (Remake)">
+                <div class="course-info">
+                    <h3>Resident Evil 3 (Remake)</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE3Remake()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILUbQGMboLLFTu0UT5EQtT7koWfrGgEL70A&s"  alt="Resident Evil 4">
+                <div class="course-info">
+                    <h3>Resident Evil 4 HD Edition</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE4HD()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQILUbQGMboLLFTu0UT5EQtT7koWfrGgEL70A&s" alt="Resident Evil 4 (Remake)">
+                <div class="course-info">
+                    <h3>Resident Evil 4 (Remake)</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <a href="javascript:void(0);" class="button" onclick="openModal('residentEvil4')">Download</a>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://preview.redd.it/my-idea-of-resident-evil-5-remake-logo-referencing-the-2011-v0-z1unelkrniub1.jpg?auto=webp&s=7dc74387c430e87aae491617c5a8f4e023989e67" alt="Resident Evil 5">
+                <div class="course-info">
+                    <h3>Resident Evil 5</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE5()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdN0iPskibWwVRrsx012P4Dh8zDHl4wSLQ5Q&s" alt="Resident Evil 6">
+                <div class="course-info">
+                    <h3>Resident Evil 6</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <button class="button" onclick="downloadRE6()">Download</button>
+                </div>
+            </div>            
+    
+            <div class="course-card" id="">
+                <img src="https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/20182.jpeg.webp" alt="Resident Evil 7">
+                <div class="course-info">
+                    <h3>Resident Evil 7</h3>
+                    <p>Experience Horror With Resident Evil.</p>
+                    <a href="javascript:void(0);" class="button" onclick="openModal('residentEvil7')">Download</a>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <img src="https://live.staticflickr.com/7200/6840493844_ba0a0f4ac0_z.jpg" alt="Resident Evil Operation Raccoon City">
+                <div class="course-info">
+                <h3>Resident Evil Operation Raccoon City</h3>
+                <p>Experience Horror With Resident Evil.</p>
+                <button class="button" onclick="downloadREOperationRaccoonCity()">Download</button>
+                </div>
+            </div>
+
+<div class="course-card" id="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYQOLbYrfBEhZKQAwFihPu6Acre2tUg6aQw&s" alt="Resident Evil Revelations">
+    <div class="course-info">
+        <h3>Resident Evil Revelations</h3>
+        <p>Experience Horror With Resident Evil.</p>
+        <button class="button" onclick="downloadRERevelations()">Download</button>
+    </div>
+</div>
+
+<div class="course-card" id="">
+    <img src="https://www.bigredbarrel.com/wp-content/uploads/2014/11/rerlogo.jpg" alt="Resident Evil Revelations 2">
+    <div class="course-info">
+        <h3>Resident Evil Revelations 2</h3>
+        <p>Experience Horror With Resident Evil.</p>
+        <button class="button" onclick="downloadRERevelations2()">Download</button>
+    </div>
+</div>
+
+<div class="course-card" id="">
+    <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Resident-Evil-Village-Logo.jpg" alt="Resident Evil Village">
+    <div class="course-info">
+        <h3>Resident Evil Village</h3>
+        <p>Experience Horror With Resident Evil.</p>
+        <a href="javascript:void(0);" class="button" onclick="openModal('residentEvilevil')">Download</a>
+    </div>
+</div>
+
+        </div>
+    </div>
+           
+    <div class="section-rdr">
+        <h2>Red Dead Redemption</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/82c4ce208862945.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="RDR 2">
+                <div class="course-info">
+                    <h3>RDR 2</h3>
+                    <p>The latest in the series, with a massive open world and endless fun.</p>
+                    <button class="button" onclick="downloadRDR2()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-elden">
+        <h2>ELDEN RING</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <img src="https://i.ytimg.com/vi/D1H4o4FW-wA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCeEG47i3U5Bou3VKKhvH0bC4TzjQ" alt="ELDEN RING">
+                <div class="course-info">
+                    <h3>ELDEN RING</h3>
+                    <p>The latest in the series, with a massive open world and endless fun.</p>
+                    <button class="button" onclick="downloadEldenRing()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-uncharted">
+        <h2>UNCHARTED LEGACY OF THEIVES</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <img src="https://images.gog-statics.com/294b4e04dc1be317d3f7ad22712097340e25a4ab6fc69c93b267b8676c3f72d6.jpg" alt="UNCHARTED LEGACY OF THEIVES">
+                <div class="course-info">
+                    <h3>UNCHARTED LEGACY OF THEIVES</h3>
+                    <p>The latest in the series, with a massive open world and endless fun.</p>
+                    <button class="button" onclick="downloadUncharted()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+    <div class="section-rdr">
+        <h2>God Of War</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <img src="https://cdn.buymeacoffee.com/uploads/project_updates/2023/07/d928de80e5ad85974d54d11f4fb22384.jpg@1000w_0e.webp" alt="God Of War">
+                <div class="course-info">
+                    <h3>God Of War Ragnarok</h3>
+                    <p>Experience the God Of War For Free !!</p>
+                    <button class="button" onclick="downloadGodOfWar()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-nfs">
+        <h2>CYBERPUNK</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/MncU8Z4TrxH95PxYHMmsbfJdF9uzkrzMtXsEa9Yi4HA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZGV4ZXJ0by5jb20v/Y2RuLWltYWdlL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDI0LzAz/LzA2L2h1Z2UtMS5q/cGc_d2lkdGg9MTIw/MCZxdWFsaXR5PTc1/JmZvcm1hdD1hdXRv" alt="Cyberpunk 2077">
+                <div class="course-info">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Experience the God Of War For Free !!</p>
+                    <button class="button" onclick="downloadcyberpunk()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="section-nfs">
+        <h2>Need For Speed Collection</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvL8a67RzI6yGQAY3ik7dQHl9YHLtX74RJeg&s" alt="NFS HOT PURSUIT">
+                <div class="course-info">
+                    <h3>NFS HOT PURSUIT(OLD)</h3>
+                    <p>Experience high-speed chases and intense racing.</p>
+                    <button class="button" onclick="downloadNFSHotPursuitOld()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi5jUBZfNKUpOtSXQOqaMspQfnvXVpwXzxVw&s" alt="NFS UNDERGROUND">
+                <div class="course-info">
+                    <h3>NFS UNDERGROUND</h3>
+                    <p>Customize your car and race through the streets.</p>
+                    <button class="button" onclick="downloadNFSUnderground()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://i.ytimg.com/vi/DRR464LoKhI/maxresdefault.jpg" alt="NFS MOSTWANTED 2005">
+                <div class="course-info">
+                    <h3>NFS MOSTWANTED 2005</h3>
+                    <p>Outrun the cops and become the most wanted racer.</p>
+                    <button class="button" onclick="downloadNFSMostWanted2005()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://gepig.com/game_cover_460w/299.jpg" alt="NFS CARBON">
+                <div class="course-info">
+                    <h3>NFS CARBON</h3>
+                    <p>Race in the canyons and build your crew.</p>
+                    <button class="button" onclick="downloadNFSCARBON()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://gepig.com/game_cover_460w/3.jpg" alt="NFS PROSTREET">
+                <div class="course-info">
+                    <h3>NFS PROSTREET</h3>
+                    <p>Experience the thrill of street racing with realistic physics.</p>
+                    <button class="button" onclick="downloadNFSProstreet()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2f1c0b8-d549-453c-ac1d-d4297add77a0/dihj3mq-b9768780-9d94-4273-9396-6f68df699adb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2MyZjFjMGI4LWQ1NDktNDUzYy1hYzFkLWQ0Mjk3YWRkNzdhMFwvZGloajNtcS1iOTc2ODc4MC05ZDk0LTQyNzMtOTM5Ni02ZjY4ZGY2OTlhZGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kGWwM8EFx3v1HpHFSzKGqoHjmnMxhN2_rXS2RO_96Ds" alt="NFS UNDERCOVER">
+                <div class="course-info">
+                    <h3>NFS UNDERCOVER</h3>
+                    <p>Engage in undercover missions and high-speed pursuits.</p>
+                    <button class="button" onclick="downloadNFSUndercover()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://cdn.thegamesdb.net/images/original/fanart/845-2.jpg" alt="NFS SHIFT">
+                <div class="course-info">
+                    <h3>NFS SHIFT</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFShift()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqaz10SRtTx0SyFiI0SwH0u3G09p0vDBj1fg&s" alt="NFS SHIFT 2">
+                <div class="course-info">
+                    <h3>NFS SHIFT 2 UNLEASED</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFShift2Unleashed()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/47870/capsule_616x353.jpg?t=1615216487" alt="NFS HOT PURSUIT (Remake)">
+                <div class="course-info">
+                    <h3>NFS HOT PURSUIT(Remake)</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFSHotPursuitRemake()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUXG-WSUqhuaH5HZMPxQ3r2cRI87X24_imQ&s" alt="NFS RUN">
+                <div class="course-info">
+                    <h3>NFS RUN</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFSRun()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlD8W-kbFSqS5FFwRO-s6t69OJ3mKmY8ob-nuOzn9NiKFVcSrvXtA6p2W2jlZ4DujW_AKI" alt="NFS MW 2012">
+                <div class="course-info">
+                    <h3>NFS MOST WANTED 2012</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFSMostWanted2012()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://tcrf.net/images/thumb/1/11/NFSR-title_screen.png/400px-NFSR-title_screen.png" alt="NFS RIVALS">
+                <div class="course-info">
+                    <h3>NFS RIVALS</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFSRivals()">Download</button>
+                </div>
+            </div>
+            
+            <div class="course-card" id="">
+                <img src="https://m.media-amazon.com/images/I/81NyV8zMlGS._AC_UF1000,1000_QL80_.jpg" alt="NFS PAYBACK">
+                <div class="course-info">
+                    <h3>NFS PAYBACK</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <button class="button" onclick="downloadNFSPayback()">Download</button>
+                </div>
+            </div>
+
+
+            <div class="course-card" id="">
+                <img src="https://news-cdn.softpedia.com/images/news2/need-for-speed-heat-review-ps4-528179-2.jpg" alt="NFS HEAT">
+                <div class="course-info">
+                    <h3>NFS HEAT</h3>
+                    <p>Experience the thrill of racing with a focus on realism.</p>
+                    <a href="javascript:void(0);" class="button" onclick="openModal('nfs1')">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-rdr">
+        <h2>Forza Horizon Series</h2>
+        <h4>To Play Any Game Online You Have Open <a href="https://store.steampowered.com/about/">Steam</a> In Background And Also You Have To Download <a href="https://www.xbox.com/en-US/apps/xbox-app-on-pc">XBOX</a>To Login</h4>
+        <div class="card-container">
+            
+                <div class="course-card" id="">
+                    <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/forza-horizon-3/e/e3/Horizon3.jpg" alt="Forza Horizon 3">
+                    <div class="course-info">
+                        <h3>Forza Horizon 3</h3>
+                        <p>Experience high-speed chases and intense racing.</p>
+                        <button class="button" onclick="downloadForzaHorizon3()">Download</button>
+                    </div>
+                </div>
+    
+            <div class="card-container">
+                <div class="course-card" id="">
+                    <img src="https://logodix.com/logo/870024.png" alt="Forza Horizon 4">
+                    <div class="course-info">
+                        <h3>Forza Horizon 4</h3>
+                        <p>Experience high-speed chases and intense racing.</p>
+                        <button class="button" onclick="downloadForzaHorizon4()">Download</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="card-container">
+                <div class="course-card" id="">
+                    <img src="https://www.dsogaming.com/wp-content/uploads/2021/06/Forza-Horizon-5.jpg" alt="Forza Horizon 5">
+                    <div class="course-info">
+                        <h3>Forza Horizon 5</h3>
+                        <p>Experience high-speed chases and intense racing.</p>
+                        <button class="button" onclick="downloadForzaHorizon5()">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-rdr">
+        <h2>Simulation Games</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/hsMW7QU8EuiSmKz57UwTiBjxxKPsymAshmcQR0k5RYY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9nYW1p/bmctY2RuLmNvbS9p/bWFnZXMvcHJvZHVj/dHMvOTUwMi8zODB4/MjE4L2dhcy1zdGF0/aW9uLXNpbXVsYXRv/ci1wYy1tYWMtZ2Ft/ZS1zdGVhbS1jb3Zl/ci5qcGc_dj0xNzQx/OTU3ODU1" alt="Gas Station Simulator">
+                <div class="course-info">
+                    <h3>Gas Station Simulator</h3>
+                    <p>Handle Your Gas Station Freely As You want!</p>
+                    <button class="button" onclick="downloadgas()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/GYUXhen0PAFptFprULGb3F7ZXIgbpyH77xhJqR-Uvzc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hcGty/YWJpLmNvbS91cGxv/YWRzLzIwMjQvMTAv/bW90ZWwtbWFuYWdl/ci1zaW11bGF0b3It/dGh1bWJuYWlsLmpw/Zw" alt="Motel Manager Simulator">
+                <div class="course-info">
+                    <h3>Motel Manager Simulator</h3>
+                    <p>Handle Your Motel Freely As You want!</p>
+                    <button class="button" onclick="downloadgas()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/Xle9Ss9ByIcQzWi2QX9DFKA07jkB1_xPNd5K5_TxoZE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/Y2YuZ2FtaXZvLmNv/bS9pbWFnZV9vcmln/aW5hbC5qcGc_Zj00/MTMzMDgmbj0zMDMw/NDE1NzExNzM5MDI3/NC5qcGcmaD1hMzdi/YmUzMDhlNzEzYmMy/ZTg3NDI3MjY4MGRk/NjFiMA" alt="Internet Cafe Simulator2">
+                <div class="course-info">
+                    <h3>Internet Cafe Simulator 2</h3>
+                    <p>Handle Your Motel Freely As You want!</p>
+                    <button class="button" onclick="downloadinternet()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/JAte80OcfBQTT50aqoTMdbv0q-q0QgfeaAGraTyBgvs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/Z2cuZGVhbHMvOWIv/ZmUvZjRiNDI1NjFl/NzlkMTBhMjZkNDMx/OWYyODk4MWU2MTU4/NDliXzkxMmNyNDg1/LmpwZw" alt="Ranch Simulator">
+                <div class="course-info">
+                    <h3>Ranch Simulator</h3>
+                    <p>Handle Your Farm Freely As You want!</p>
+                    <button class="button" onclick="downloadranch()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/W720x9YPtPRezozOmvmcPtVlTE9OoWS0Rb6WMufkOfw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ncHN0/YXRpYy5jb20vYWNh/Y2hlLzcxLzMyLzEv/dXMvdDYyMHgzMDAt/ZGZlYTA2OTc5N2M3/MmY5MGJiYmFlNjU0/N2Y0MGU1MjcuanBn" alt="Gym Manager">
+                <div class="course-info">
+                    <h3>GYM Manager</h3>
+                    <p>Handle Your Gym Freely As You want!</p>
+                    <button class="button" onclick="downloadgymsim()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/SFTvTeAhp9Fw9bBuGjBiCdnjwcyAaW3xaE6ocJIRF-U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbGln/aHRzaW11bGF0b3Iu/YXp1cmVlZGdlLm5l/dC93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8wNi9NU0ZTMjAy/NF9QYXBheWFfTm9T/bmlwZV9Ob1RleHQt/MTAyNHg1NzYucG5n" alt="Microsoft Flight Simulator">
+                <div class="course-info">
+                    <h3>Microsoft Flight Simulator</h3>
+                    <p>Handle Your Flight Freely As You want!</p>
+                    <button class="button" onclick="downloadmicrosoftflightsim()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/4ZfwEfF0wywHAojyX-PX86GN6X8pVvVddlwgFHbO9OM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMubmludGVuZG8u/Y29tL2ltYWdlL3Vw/bG9hZC9mX2F1dG8v/cV9hdXRvL2Rwcl8x/LjUvbmNvbS9zb2Z0/d2FyZS9zd2l0Y2gv/NzAwMTAwMDAwNzk0/MTAvZGVlMWMzMjQ3/MTQ4NTc5MjI5MTVk/NTJhNTUyOTlmYTQx/MzU5YTViNjhjOGJl/OGJhYTA3OGFkNjNm/YWMwYzQ5OQ" alt="Food Truck Simulator">
+                <div class="course-info">
+                    <h3>Food Truck Simulator</h3>
+                    <p>Handle Your Food Truck Freely As You want!</p>
+                    <button class="button" onclick="downloadfoodtrucksim()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/ah-4Qj72Axy3qXiXEml9PEVquLKLR6apsDFQ2qo-MAg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbGF5/d2F5LmNvbS9pbWFn/ZXMvY2FyX21lY2hh/bmljX3NpbXVsYXRv/cjIwMjFfMTI4MHg3/MjBfMDEucG5n" alt="Car Mechanic Simulator 2021">
+                <div class="course-info">
+                    <h3>Car Mechanic Simulator 2021</h3>
+                    <p>Handle Your Garage Freely As You want!</p>
+                    <button class="button" onclick="downloadcarmechanic()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/BIdP-uYSP-7pKuFlUDBTrZiGox8cAeVQjuD4-phJtA0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDY5NTY5/NDYuanBn" alt="American Truck Simulator">
+                <div class="course-info">
+                    <h3>American Truck Simulator</h3>
+                    <p>Handle Your Truck Company Freely As You want!</p>
+                    <button class="button" onclick="downloadamericantruck()">Download</button>
+                </div>
+            </div>
+
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/ZKS2xIdN_99kOmI7bgZq9_zTNM57-GxD9CwHgI05qls/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2NhLzZl/LzQxL2NhNmU0MTZk/MzkzY2JhNzQ3NzNm/NjBlNGQ1NzczZWUy/LmpwZw" alt="Euro Truck Simulator">
+                <div class="course-info">
+                    <h3>Euro Truck Simulator 2</h3>
+                    <p>Handle Your Truck Company Freely As You want!</p>
+                    <button class="button" onclick="downloadeurotruck()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+    <div class="section-far">
+        <h2>Far Cry Series</h2>
+        <h3>Password Of All Files : 123</h3>
+        <div class="card-container">
+        
+            <!-- Far Cry -->
+            <div class="course-card" id="">
+                <img src="https://shared.steamstatic.com/store_item_assets/steam/apps/13520/header.jpg?t=1602602361" alt="Far Cry">
+                <div class="course-info">
+                    <h3>Far Cry</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry()">Download</button>
+                </div>
+            </div>
+            
+            <!-- Far Cry 2 -->
+            <div class="course-card" id="">
+                <img src="https://images.gog-statics.com/c6c61caa45125a5dc7916436004f5146999e52bf078aceb16ed0a07b0ecef33a.jpg" alt="Far Cry 2">
+                <div class="course-info">
+                    <h3>Far Cry 2</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry2()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry 3 -->
+            <div class="course-card" id="">
+                <img src="https://cdn1.epicgames.com/hellebore/offer/GameName_Edition_Capsule_1920X1080-1920x1080-3131a5c2e251c88843f63801db17885ae66ca44b.jpg?resize=1&w=480&h=270&quality=medium" alt="Far Cry 3">
+                <div class="course-info">
+                    <h3>Far Cry 3</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry3()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry Blood Dragon -->
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyrEVjxS4Zw1_CO60Du_oMs96YzG_V7UDFObzKdODkwNaOHMe7grYi1FTH8RjBhbLJM8&usqp=CAU" alt="Far Cry Blood Dragon">
+                <div class="course-info">
+                    <h3>Far Cry Blood Dragon</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCryBloodDragon()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry New Dawn -->
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_HuMUPtXyay4hmeMpkRHPxpxJ_BVCWNx-boZ73GNhltPIMukK80cFeFLiUo5arZmy4nU&usqp=CAU" alt="Far Cry New Dawn">
+                <div class="course-info">
+                    <h3>Far Cry New Dawn</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCryNewDawn()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry Primal -->
+            <div class="course-card" id="">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/0*NDGXUNNYBMMa3X4e.jpg" alt="Far Cry Primal">
+                <div class="course-info">
+                    <h3>Far Cry Primal</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCryPrimal()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry 4 -->
+            <div class="course-card" id="">
+                <img src="https://cdn1.epicgames.com/cf87285950ba492bbdc370b9d265ea36/offer/FC4_GE_Edition_Capsule_1920X1080-1920x1080-b1d8dd2b38d0930805fee4a29320aaa2542c3c2b.jpg?resize=1&w=480&h=270&quality=medium" alt="Far Cry 4">
+                <div class="course-info">
+                    <h3>Far Cry 4</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry4()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry 5 -->
+            <div class="course-card" id="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYnZZPUMsAkc-9s9AlY-0Sx7QWDg2fyYrlrh17ttF0dm893r9NE_EfqixiwhzSu3jsFjc&usqp=CAU" alt="Far Cry 5">
+                <div class="course-info">
+                    <h3>Far Cry 5</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry5()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Far Cry 6 -->
+            <div class="course-card" id="">
+                <img src="https://i.ytimg.com/vi/AiynOjzcebs/maxresdefault.jpg" alt="Far Cry 6">
+                <div class="course-info">
+                    <h3>Far Cry 6</h3>
+                    <p>Experience the thrill of Story And Fight.</p>
+                    <button class="button" onclick="downloadFarCry6()">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-rdr">
+        <h2>SpiderMan</h2>
+        <div class="card-container">
+
+           <!-- Spiderman 2 -->
+        <div class="course-card" id="">
+            <div class="badge">NEW</div>
+            <img src="https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S1_2560x1440-f27da78f484626718d1e22e7d6950ca5" alt="SpiderMan">
+            <div class="course-info">
+            <h3>SpiderMan 2</h3>
+            <p>Experience the thrill of Nature and Environment.</p>
+            <button class="button" onclick="openModal('spider2')">Download</button>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <div class="section-forza">
+        <h2>Asseto Corsa</h2>
+        <div class="card-container">
+            <div class="course-card" id="">
+                <div class="badge">NEW</div>
+                <img src="https://imgs.search.brave.com/ii7O55itFu7ivNOj0Jq4IUNvW1SlRWzLchuYHN0MJ9Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci85NjEv/NzQzL0hELXdhbGxw/YXBlci1hc3NldHRv/LWNvcnNhLWdhbWUt/cG9zdGVycy5qcGc" alt="Asseto Corsa">
+                <div class="course-info">
+                <h3>Asseto Corsa</h3>
+                <p>Experience the thrill of Nature and Environment With Racing.</p>
+                <button class="button" onclick="downloadasseto()">Download</button>
+            </div>
+        </div>
+    </div>    
+
+    <div class="section-forza">
+        <h2>Online Games</h2>
+        <div class="card-container">
+            <h3>Password Of All Files : 123</h3>
+            <h3>Common Instructions : After Downloading Following Games If you will not Have Downloaded Steam You can't play it <br>online <a href="https://store.steampowered.com/about/?l=english" target="_blank">Download Steam?</a>
+            </h3>
+            <p><strong>Main Instructions : </strong>𝗢𝗣𝗘𝗡 𝗦𝗧𝗘𝗔𝗠 𝗬𝗢𝗨 𝗦𝗛𝗢𝗨𝗟𝗗 𝗖𝗥𝗘𝗔𝗧𝗘 𝗔 𝗦𝗧𝗘𝗔𝗠 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗙 𝗬𝗢𝗨 𝗗𝗢𝗡'𝗧 𝗛𝗔𝗩𝗘 𝗞𝗘𝗘𝗣 𝗦𝗧𝗘𝗔𝗠 𝗢𝗣𝗘𝗡𝗘𝗗 𝗧𝗛𝗘𝗡 𝗥𝗨𝗡 𝗧𝗛𝗘 𝗚𝗔𝗠𝗘 𝗢𝗡𝗟𝗜𝗡𝗘 𝗙𝗜𝗫𝟲𝟰.𝗗𝗟𝗟 𝗜𝗡 𝗧𝗛𝗘 𝗚𝗔𝗠𝗘 𝗙𝗢𝗟𝗗𝗘𝗥 𝗦𝗛𝗢𝗨𝗟𝗗𝗡'𝗧 𝗚𝗘𝗧 𝗗𝗘𝗟𝗘𝗧𝗘𝗗</p>
+            
+            <!--PalWorld-->
+        <div class="course-card" id="">
+            <div class="badge">NEW</div>
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/c961ac047294838bfe382bf193ade5c64b19e573/capsule_616x353.jpg?t=1742869326" alt="PalWorld">
+            <div class="course-info">
+                <h3>PalWorld</h3>
+                <p>Experience the PalWorld For Free !!</p>
+                <button class="button" onclick="downloadpal()">Download</button>
+            </div>
+        </div>
+
+            <div class="course-card" id="">
+                <img src="https://cdn2.unrealengine.com/egs-amongus-innersloth-g1a-00-1920x1080-3c552a5212ff.jpg?resize=1&w=480&h=270&quality=medium" alt="Among Us">
+                <div class="course-info">
+                    <h3>Among Us</h3>
+                    <p>Experience the Among Us For Free !!</p>
+                    <button class="button" onclick="downloadAmongUs()">Download</button>
+                </div>
+            </div>
+            
+            <!-- Chained Together -->
+            <div class="course-card" id="">
+                <img src="https://play-lh.googleusercontent.com/zHLuN7yC-BwhPm3P1TjoYPeKg5WWHodPn5fH3ZSSvZU5cVf98lkzIIXH4bvws2y78g=w526-h296-rw" alt="Chained Together">
+                <div class="course-info">
+                    <h3>Chained Together</h3>
+                    <p>Experience the Chained Together Online For Free !!</p>
+                    <button class="button" onclick="downloadChainedTogether()">Download</button>
+                </div>
+            </div>
+    
+            <!-- Buckshot Roulette -->
+            <div class="course-card" id="">
+                <img src="https://images.g2a.com/470x276/1x1x0/buckshot-roulette-pc-steam-key-global-i10000504233001/93461eba6c2f4fa78a0edd87" alt="Buckshot Roulette">
+                <div class="course-info">
+                    <h3>Buckshot Roulette</h3>
+                    <p>Experience the Buckshot Roulette Online For Free !!</p>
+                    <button class="button" onclick="downloadBuckshotRoulette()">Download</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>    
+        <div class="section-rdr">
+            <h2>OLD GAMES</h2>
+            <div class="card-container">
+
+               <!-- Bully Scholarship Edition -->
+                <div class="course-card" id="">
+                        <img src="https://imgs.search.brave.com/15mJfWTVhrQNmeXxdyKwhGStDOgru7gqdWBD9LTPFTI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFjOUpJWTdzRkwu/anBn" alt="Bully Scholarship Edition">
+                    <div class="course-info">
+                        <h3>Bully Scholarship Edition</h3>
+                        <p>Experience the thrill of Nature and Environment.</p>
+                        <button class="button" onclick="downloadBullyScholarshipEdition()">Download</button>
+                    </div>
+                </div>
+
+                <!-- Total OverDose -->
+                <div class="course-card" id="">
+                    <img src="https://imgs.search.brave.com/W6L2Ue01jTPAdkti-wuoP4sJtmPOOSe-lJpgJgM4vrY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vdXBsb2Fk/cy5mcmVlZ29ncGNn/YW1lcy5jb20vaW1h/Z2UvVG90YWwtT3Zl/cmRvc2UuanBnP3Jl/c2l6ZT02NzgsMzgx/JnNzbD0x" alt="Total OverDose">
+                <div class="course-info">
+                    <h3>Total OverDose</h3>
+                    <p>Experience the thrill of being Gangster in the city.</p>
+                    <button class="button" onclick="downloadtotal()">Download</button>
+                </div>
+            </div>
+
+            <!--IGI 1-->
+            <div class="course-card" id="">
+                <img src="https://imgs.search.brave.com/GluswMZiAENjYlWiCtp8lgHnnumBxKl4qGeqkImPa2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuY2FyYS5hcHAv/cHJvZHVjdGlvbi9w/cm9maWxlcy8wNTc1/OTZiZi0zZjNiLTQz/MmYtOTliNy01NWE2/ZjRjOTJjZWUvMTAw/MDA2MjEwNi5qcGc_/d2lkdGg9NzUw" alt="Project IGI">
+            <div class="course-info">
+                <h3>Project IGI</h3>
+                <p>Experience the thrill of being Army Man.</p>
+                <button class="button" onclick="downloadigi()">Download</button>
+            </div>
+        </div>
+
+        <!--IGI 2-->
+        <div class="course-card" id="">
+            <img src="https://imgs.search.brave.com/2byBJEmJrVf95rr_9YZMpoMiYpquRB67lOhcb2AGsuA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGVjaG5pZWQuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy9Qcm9q/ZWN0LUlHSS0yLUZ1/bGwtUEMtR2FtZS5q/cGc" alt="Project IGI 2">
+        <div class="course-info">
+            <h3>Project IGI 2</h3>
+            <p>Experience the thrill of being Army Man.</p>
+            <button class="button" onclick="downloadigi2()">Download</button>
+        </div>
+    </div>
+    
+    <!--Crysis-->
+    <div class="course-card" id="">
+        <img src="https://imgs.search.brave.com/OR0ME6RodKvK7wHfX9Rrngn0g1nJ2xRANfafJm-SnP8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3J5dGVrLmNvbS9m/cm9udGVuZC8wMWFk/ZWMyMGZkMDUzNmEz/MzFhNWUwNzJiMDIw/NjVjMy0zMjAucG5n" alt="Crysis">
+    <div class="course-info">
+        <h3>CRYSIS</h3>
+        <p>Experience the thrill.</p>
+        <button class="button" onclick="downloadcry()">Download</button>
+    </div>
+</div>
+            </div>
+        </div>        
+        
+        <div class="section-gta">
+            <h2>Horror Games</h2>
+            <div class="card-container">
+                <h3>Common Instructions : After Downloading Following Games If you will not Have Downloaded Steam You can't play it online <a href="https://store.steampowered.com/about/?l=english" target="_blank">Download Steam?</a>
+                </h3>
+                <p>Main Instructions : 𝗢𝗣𝗘𝗡 𝗦𝗧𝗘𝗔𝗠 𝗬𝗢𝗨 𝗦𝗛𝗢𝗨𝗟𝗗 𝗖𝗥𝗘𝗔𝗧𝗘 𝗔 𝗦𝗧𝗘𝗔𝗠 𝗔𝗖𝗖𝗢𝗨𝗡𝗧 𝗜𝗙 𝗬𝗢𝗨 𝗗𝗢𝗡'𝗧 𝗛𝗔𝗩𝗘 𝗞𝗘𝗘𝗣 𝗦𝗧𝗘𝗔𝗠 𝗢𝗣𝗘𝗡𝗘𝗗 𝗧𝗛𝗘𝗡 𝗥𝗨𝗡 𝗧𝗛𝗘 𝗚𝗔𝗠𝗘 𝗢𝗡𝗟𝗜𝗡𝗘 𝗙𝗜𝗫𝟲𝟰.𝗗𝗟𝗟 𝗜𝗡 𝗧𝗛𝗘 𝗚𝗔𝗠𝗘 𝗙𝗢𝗟𝗗𝗘𝗥 𝗦𝗛𝗢𝗨𝗟𝗗𝗡'𝗧 𝗚𝗘𝗧 𝗗𝗘𝗟𝗘𝗧𝗘𝗗</p>
+
+              <!-- Pacify -->
+        <div class="course-card" id="">
+            <img src="https://pbs.twimg.com/ext_tw_video_thumb/1246239768662474752/pu/img/vtaykWwkHGB6Ei1t.jpg:large" alt="Pacify">
+            <div class="course-info">
+                <h3>Pacify</h3>
+                <p>Experience the Pacify For Free !!</p>
+                <button class="button" onclick="downloadPacify()">Download</button>
+            </div>
+        </div>
+
+        <!-- Phasmophobia -->
+        <div class="course-card" id="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRerpJpjCiRV1gPejehw9JZCyMThGSYnka_Tw&s" alt="Phasmophobia">
+            <div class="course-info">
+                <h3>Phasmophobia</h3>
+                <p>Experience the Pacify For Free !!</p>
+                <button class="button" onclick="downloadPhasmophobia()">Download</button>
+            </div>
+        </div>
+
+        <!-- Kamla -->
+        <div class="course-card" id="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd_KJaueFXWog4AYl_FUy5N_AJ3Gz8dPqMSg&s" alt="Kamla">
+            <div class="course-info">
+                <h3>Kamla</h3>
+                <p>Experience the Kamla For Free !!</p>
+                <button class="button" onclick="downloadKamla()">Download</button>
+            </div>
+        </div>
+            </div>
+        </div>
+
+        <div class="section-rdr">
+            <h2>Editing Softwares</h2>
+            <div class="card-container">
+
+                <div class="card-container">
+                    <!-- Adobe Photoshop -->
+        <div class="course-card" id="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b4/19/0a/b4190aad-77f5-3935-f2ad-fb95a5d73977/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/1200x630wa.png" alt="Photoshop">
+            <div class="course-info">
+                <h3>Adobe Photoshop</h3>
+                <p>Experience the Editing.</p>
+                <button class="button" onclick="downloadPhotoshop()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <!-- Adobe After Effects -->
+        <div class="course-card" id="">
+            <img src="https://media.licdn.com/dms/image/v2/D5612AQHMjy_9UiPrVw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721170306145?e=2147483647&v=beta&t=bT6J1ce4IgIZD4CDWGDC5M1vMzr085aKxuv2bDx7dao" alt="After Effects">
+            <div class="course-info">
+                <h3>Adobe After Effects</h3>
+                <p>Experience the Editing</p>
+                <button class="button" onclick="downloadAfterEffects()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <!-- Adobe Premiere Pro -->
+        <div class="course-card" id="">
+            <img src="https://cdn.prod.website-files.com/65e09abf952724557f01dd99/65e09abf952724557f01e3b7_Premiere_icon.png" alt="Premiere Pro">
+            <div class="course-info">
+                <h3>Adobe Premiere Pro</h3>
+                <p>Experience the Editing</p>
+                <button class="button" onclick="downloadPremierePro()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <!-- Adobe Lightroom -->
+        <div class="course-card" id="">
+            <img src="https://i.pinimg.com/736x/74/f9/7a/74f97a9f46f66bc57aa09704dcf1de04.jpg" alt="Lightroom">
+            <div class="course-info">
+                <h3>Adobe Lightroom</h3>
+                <p>Experience the Editing</p>
+                <button class="button" onclick="downloadLightroom()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <!-- Adobe Illustrator -->
+        <div class="course-card" id="">
+            <img src="https://png.pngtree.com/png-vector/20220606/ourmid/pngtree-adobe-illustrator-ai-icon-png-image_4899504.png" alt="Illustrator">
+            <div class="course-info">
+                <h3>Adobe Illustrator</h3>
+                <p>Experience the Editing</p>
+                <button class="button" onclick="downloadIllustrator()">Download</button>
+            </div>
+        </div>
+            </div>
+        </div>    
+        <button id="scrollToTopBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2l8 8h-6v12h-4v-12h-6z"/>
+            </svg>
+        </button>
+        
+        <!-- Modal -->
+        <div id="downloadModal" class="modal">
+            <div class="modal-content">
+              <h2>Download Options</h2>
+              <div id="downloadLinks"></div> <!-- This will hold the download links -->
+              <button class="back-button" onclick="closeModal()">Back</button>
+            </div>
+          </div>
+          <div class="popup-overlay" id="termsPopup">
+            <div class="popup-box">
+              <h2>Terms and Conditions</h2>
+              <p>By clicking "Agree", you accept our <a href="term&condition.html" target="_blank">terms & Conditions</a> .If you do not agree, click "Disagree".</p>
+              <div class="popup-buttons">
+                <button class="agree" onclick="handleAgree()">Agree</button>
+                <button class="disagree" onclick="handleDisagree()">Disagree</button>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+  </div>
+</div>
+
+    <footer>
+        <h3 id="here">If You Have Issue With any Google Drive Links. You Must See this <a class="alert" href="https://youtu.be/_xW9w1d2LEY?si=NSgOloLpZYKjVW2Z" target="_blank">Video</a> To Solve This Error.</h3>
+        <h3>See this <a class="alert" href="https://youtu.be/2dcjjMOqomY?si=KM4TiaaEMGAoh87n">Video</a> to See how to download torrent files.</h3>
+    </footer>
+
+    
+    <script src="link.js"></script>
+    <script src="search.js"></script>
+    <script src="detection.js"></script>
+    <script src="play now.js"></script>
+    <script src="login.js"></script>
+    
+
+
+</body>
+</html>

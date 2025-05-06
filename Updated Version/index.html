@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="GamOcial">
+    <meta property="og:description" content="In this Page There Are Different Games You Can Play For Free With Our Premium Content.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Page There Are Different Games You Can Play For Free With Our Premium Content.">
+    <meta name="keywords" content="Game,Gaming,Free Gaming,freegaming,freegames,GamOcial,gamocial,GAMOCIAL,gta5,freegta,freegta5,freegtaseries,freegames,freenfs,freenfsmw,free nfs mostwanted, free gta san andreas,free sa, free vice city,free gta 3,free gta 4"> 
+    <meta name="google-adsense-account" content="ca-pub-1026299615931648">
+    <title>GAMOCIAL | UPSOCIAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Main Logo.PNG">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="gradient-overlay"></div>
+    <div class="bubbles" id="bubbles"></div>
+    
+    <div class="container">
+        <!-- Welcome Text Section -->
+        <h1 class="header-text">Welcome to GamOcial</h1>
+        <p class="subheader-text">We are glad to have you here. Explore and enjoy.</p>
+
+        <!-- Action Button -->
+        <div class="btn-container">
+            <a href="https://grabify.link/GTYRAH"><button>
+                <span>PLAY NOW</span>
+            </button></a>
+        </div>
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2XJVRPXRV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K2XJVRPXRV');
+
+        // Create bubbles
+        document.addEventListener('DOMContentLoaded', function() {
+            const bubblesContainer = document.getElementById('bubbles');
+            const bubbleCount = 15;
+            
+            for (let i = 0; i < bubbleCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // Random properties
+                const size = Math.random() * 100 + 50;
+                const posX = Math.random() * 100;
+                const duration = Math.random() * 10 + 10;
+                const delay = Math.random() * 5;
+                
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${posX}%`;
+                bubble.style.animationDuration = `${duration}s`;
+                bubble.style.animationDelay = `${delay}s`;
+                bubble.style.opacity = '0';
+                
+                bubblesContainer.appendChild(bubble);
+                
+                // Fade in bubble
+                setTimeout(() => {
+                    bubble.style.opacity = '0.3';
+                    bubble.style.transition = 'opacity 2s ease';
+                }, delay * 1000);
+            }
+        });
+    </script>
+    <script src="detection.js"></script>
+    <script src="play now.js"></script>
+</body>
+
+</html>

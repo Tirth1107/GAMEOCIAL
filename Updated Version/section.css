@@ -1,0 +1,745 @@
+/* GTA Series */
+.section-gta 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-gta h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-gta .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-gta .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-gta .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-gta .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(255, 200, 0)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-gta .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-gta .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-gta .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-gta .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-gta .course-info .button:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 200, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+    .section-gta .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* RDR Series */
+
+.section-rdr 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-rdr h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-rdr .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-rdr .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-rdr .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-rdr .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(255, 85, 0)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-rdr .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-rdr .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-rdr .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-rdr .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-rdr .course-info .button:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 85, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-rdr .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ELDEN Series */
+
+.section-elden 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-elden h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-elden .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-elden .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-elden .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-elden .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(0, 247, 255)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-elden .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-elden .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-elden .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-elden .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-elden .course-info .button:hover {
+    filter: drop-shadow(0 0 10px rgb(0, 247, 255)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-elden .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* UNCHARTED Series */
+
+.section-uncharted 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-uncharted h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-uncharted .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-uncharted .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-uncharted .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-uncharted .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(183, 0, 255)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-uncharted .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-uncharted .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-uncharted .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-uncharted .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-uncharted .course-info .button:hover {
+    filter: drop-shadow(0 0 10px rgb(183, 0, 255)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+    .section-uncharted .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Forza Series */
+
+.section-forza 
+{ 
+    margin: 30px 5%;
+    text-align: center;
+}
+
+.section-forza h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-forza .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section-forza .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-forza .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-forza .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(0, 255, 123)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-forza .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-forza .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-forza .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-forza .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-forza .course-info .button:hover {
+    filter: drop-shadow(0 0 10px rgb(0, 255, 123)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 800px) {
+    .section-forza .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* NFS Series */
+
+.section-nfs 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-nfs h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-nfs .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-nfs .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-nfs .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-nfs .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-nfs .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-nfs .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-nfs .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-nfs .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-nfs .course-info .button:hover {
+    filter: drop-shadow(0 0 20px rgb(255, 0, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-uncharted .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* FAR CRY Series */
+
+.section-far 
+{
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section-far h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section-far .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-far .course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.section-far .course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.section-far .course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(55, 255, 0)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.section-far .course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.section-far .course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.section-far .course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.section-far .course-info .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.section-far .course-info .button:hover {
+    filter: drop-shadow(0 0 20px rgb(55, 255, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-uncharted .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ------------------------------------------- */ 

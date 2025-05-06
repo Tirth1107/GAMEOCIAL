@@ -1,0 +1,235 @@
+/* Basic styling for the course card */
+.course-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .course-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .course-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .course-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .course-info p {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #000;
+    color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .back-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #ff0000b3;
+  }
+  
+  /* Download link buttons */
+  #downloadLinks a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+  }
+  
+  #downloadLinks a:hover {
+    filter: drop-shadow(0 0 20px rgb(55, 255, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+    margin: 10px;
+}
+  
+/* SCROLL */
+
+/* Scroll-to-top button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#scrollToTopBtn svg {
+    width: 24px;
+    height: 24px;
+    fill: white; /* Color of the SVG icon */
+}
+
+#content {
+    display: none;
+    /* Main content hidden by default */
+    padding: 20px;
+  }
+
+  #welcome-message {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    background: linear-gradient(135deg, #ff0000, #000000); /* Gradient background */
+    padding: 15px 30px; /* Add some padding for spacing */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+    text-align: center;
+    max-width: 400px; /* Limit the width */
+    margin: 20px auto; /* Center align and give some margin */
+    animation: fadeIn 1s ease-out; /* Animation for smooth fade-in */
+}
+
+/* Add a smooth fade-in effect */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.content1
+{
+    display: none;
+}
+
+#whats-new-message {
+    display: none;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 35px;
+}
+
+#whats-new-message ul {
+    list-style-position: inside;
+}
+
+/* Love Theme Styles */
+.love-theme {
+    background-color: #ffccf9; /* Light pink background */
+    color: #a83279; /* Romantic purple text */
+    font-family: 'Pacifico', cursive; /* Romantic font */
+}
+
+.love-theme h2,
+.love-theme h3,
+.love-theme h4 {
+    color: #d6336c; /* Romantic red for headings */
+    font-family: 'Pacifico', cursive;
+}
+
+.love-theme .course-card {
+    background-color: #ffebf9; /* Light pink card background */
+    border: 2px solid #ff85a2; /* Romantic border */
+}
+
+.love-theme .course-card:hover {
+    filter: drop-shadow(0 0 10px #ff85a2); /* Romantic glow */
+    transform: translateY(-5px);
+}
+
+.love-theme .button {
+    background-color: #ff85a2; /* Romantic pink button */
+    color: white;
+}
+
+.love-theme .button:hover {
+    filter: drop-shadow(0 0 10px #ff85a2); /* Romantic glow */
+}
+
+/* Heart Animation */
+@keyframes floatHearts {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: #ff85a2;
+    animation: floatHearts 5s linear infinite;
+    pointer-events: none;
+}
+
+/* Add a romantic font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.none
+{
+    display: none;
+}
+
+.alert
+{
+    cursor: pointer;
+}

@@ -1,0 +1,375 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Darker background for a more modern feel */
+    color: #eaeaea; /* Light text for contrast */
+}
+
+/* Base button styling */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #28a745; /* Green background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+
+/* Download Button Styles */
+.download-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #000000; /* Green background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.button :hover{
+    transform: translateY(-5px); /* Slight lift on hover */
+
+}
+
+/* Hover effect for the download button */
+.download-button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Focus effect for accessibility */
+.download-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Green outline on focus */
+}
+/* ===== ULTRA DARK THEME PASSWORD OVERLAY ===== */
+#password-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(12px) brightness(0.8);
+    animation: fadeIn 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Password Box - Cyberpunk Dark */
+#password-box {
+    background: linear-gradient(145deg, #0a0a0a, #111111);
+    padding: 2.8rem;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.6),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+    width: 400px;
+    max-width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    animation: slideUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.4) forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Header - Neon Accent */
+#password-box h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+    color: #fff;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    text-shadow: 0 0 10px rgba(255, 65, 65, 0.3);
+}
+
+/* Input Fields & Button - Uniform Sizing */
+#password-box input,
+#password-box button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 18px;
+    margin: 10px 0;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+/* Input Styling */
+#password-box input {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(20, 20, 20, 0.7);
+    color: #fff;
+}
+
+#password-box input::placeholder {
+    color: #555;
+    font-weight: 300;
+}
+
+#password-box input:focus {
+    outline: none;
+    border-color: #ff4141;
+    background: rgba(30, 30, 30, 0.9);
+    box-shadow: 
+        0 0 0 3px rgba(255, 65, 65, 0.15),
+        inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+#password-box button {
+    border: none;
+    background: linear-gradient(to right, #ff4141, #e00000);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(255, 65, 65, 0.3);
+}
+
+#password-box button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    transform: rotate(30deg);
+    transition: all 0.7s ease;
+}
+
+#password-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 8px 25px rgba(255, 65, 65, 0.4),
+        0 0 15px rgba(255, 65, 65, 0.2);
+}
+
+#password-box button:hover::after {
+    left: 100%;
+}
+
+#password-box button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(255, 65, 65, 0.4);
+}
+
+/* Link Styling */
+#password-box a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#password-box a:hover {
+    color: #ff4141;
+    text-shadow: 0 0 8px rgba(255, 65, 65, 0.3);
+}
+
+/* Close Button (Optional) */
+#password-overlay .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #aaa;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#password-overlay .close-btn:hover {
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+
+
+/* Header Section */
+header {
+    background: linear-gradient(185deg, #000000, #ff0000);
+    color: white;
+    text-align: center;    
+    font-size: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-bottom: 20px;
+}
+header img
+{
+    width: 300px;
+}
+
+/* Section Styles */
+.section {
+    margin: 40px 5%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #fafafa; /* Bright red for section titles */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.section .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styles */
+.course-card {
+    background: #2c2c2c; /* Dark card background */
+    border-radius: 15px;
+    width: 300px; /* Slightly wider for better content fit */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for better spacing */
+    transition: ease 0.3s;
+}
+
+/* Card Image */
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover Effect */
+.course-card:hover {
+    transition: ease 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0)); /* Add a subtle glow */
+}
+
+/* Course Info Section */
+.course-info {
+    padding: 15px;
+    text-align: center;
+    background: #3a3a3a; /* Darker background for course info */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    width: 100%; /* Full width */
+}
+
+/* Course Title */
+.course-info h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff0015; /* Bright red for course titles */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Course Description */
+.course-info p {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter gray for description */
+    margin-bottom: 15px;
+}
+
+/* Button inside the card */
+.course-info a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000; /* Bright red button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.course-info a.button:hover {
+    filter: drop-shadow(0 0 10px rgb(255, 0, 0)); /* Add a subtle glow */
+    transition: ease 0.3s;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #ededed, #ff0026);
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50px;
+    width: 100%;
+}
+footer a {
+    color: #000000; 
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    color: #ffc800;
+}
+
+/* Animation for the course count number */
+@keyframes countAnimation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#course-count {
+    font-size: 2.5em; /* Increased font size */
+    font-weight: bold;
+    color: #ff4757; /* Bright red color for count */
+    animation: countAnimation 1s ease-out;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/

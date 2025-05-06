@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="play now.css">
+    <!-- Include Google's reCAPTCHA -->
+</head>
+<body>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay">
+        <div id="password-box">
+            <input type="text" id="username-input" placeholder="Enter username">
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button onclick="checkLogin()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        // Predefined users database with unique 18-character codes
+        const usersDatabase = [
+            { username: "Admin", password: "tirth", code: "A9tM2zB7Bf1YgDd2Cz" },
+            { username: "friends", password: "11072008", code: "Lk6V2jD8Cw9NjF2KpQ" },
+            { username: "rudra", password: "rudra69", code: "Bh5M7mT1Uo2A9tHz9Y" },
+            { username: "sujal", password: "sujal69", code: "Jk3I0kZ7Tn8Ls9OeWv" },
+            { username: "rohit", password: "rohit69", code: "Rs5V0yKd9PpY7Hs1Qw" },
+            { username: "mishit", password: "mishit69", code: "Nx4QmP2Gd6Uj2Hk8Lw" },
+            { username: "prachi", password: "love", code: "Ff6Nd7Mj7Kh4M9Nr8Jr" },
+        ];
+
+        let failedAttempts = 0;  // Track failed attempts
+        let currentUser = null;  // Track current logged-in user
+
+        // Function to check the entered username and password
+        function checkLogin() {
+            const username = document.getElementById("username-input").value.trim();  // Trim whitespace
+            const password = document.getElementById("password-input").value.trim();  // Trim whitespace
+            const recaptchaResponse = grecaptcha.getResponse();  // Get reCAPTCHA response
+
+            // Check if reCAPTCHA is verified
+            if (!recaptchaResponse) {
+                alert("Please complete the CAPTCHA.");
+                return;
+            }
+
+            // Check if the username or password fields are empty
+            if (!username || !password) {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            // Check if the entered username and password match any entry in the database
+            const user = usersDatabase.find(u => u.username === username && u.password === password);
+
+            if (user) {
+                // Reset failed attempts on successful login
+                failedAttempts = 0;
+                currentUser = user;
+
+                // If a match is found, hide the password overlay and show the main content
+                document.getElementById("password-overlay").style.display = "none"; 
+                document.getElementById("content").style.display = "block"; 
+
+                // Show the welcome message with the unique code
+                showWelcomeMessage(user.username, user.code);
+
+                // Store the unique ID in session storage
+                sessionStorage.setItem('userCode', user.code);
+
+                // Redirect to the play-now.html page with the unique ID as a query parameter
+                window.location.href = `play-now.html?code=${user.code}`;
+            } else {
+                // If no match is found, increment failed attempts and show an alert
+                failedAttempts++;
+                alert("Incorrect username or password. Please try again.");
+
+                // Lock account after 5 failed attempts
+                if (failedAttempts >= 5) {
+                    alert("Too many failed login attempts. Please try again later.");
+                    document.getElementById("username-input").disabled = true;
+                    document.getElementById("password-input").disabled = true;
+                    return;
+                }
+
+                document.getElementById("password-input").value = '';  // Clear the password field
+            }
+        }
+
+        // Function to show the welcome message with the unique code
+        function showWelcomeMessage(username, code) {
+            const welcomeMessage = document.getElementById('welcome-message');
+            let greeting = "";
+
+            const currentHour = new Date().getHours();
+
+            if (currentHour >= 5 && currentHour < 12) {
+                greeting = "Good Morning, ";
+            } else if (currentHour >= 12 && currentHour < 17) {
+                greeting = "Good Afternoon, ";
+            } else if (currentHour >= 17 && currentHour < 22) {
+                greeting = "Good Evening, ";
+            } else {
+                greeting = "Good Night, ";
+            }
+
+            greeting += `${username.charAt(0).toUpperCase() + username.slice(1)}!`;
+
+            // Add the unique code to the message
+            greeting += ` Your unique code is: ${code}`;
+
+            // Update the message text
+            welcomeMessage.textContent = greeting;
+
+            // Show the welcome message
+            welcomeMessage.style.display = "block";
+
+            // Set a timeout to hide the message after 10-15 seconds
+            setTimeout(() => {
+                welcomeMessage.style.display = "none"; // Hide the message
+            }, 10000 + Math.random() * 5000); // 10-15 seconds range
+        }
+    </script>
+</body>
+</html>

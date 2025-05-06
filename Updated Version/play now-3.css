@@ -1,0 +1,162 @@
+:root{
+    --m:55px
+}
+
+#center
+{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.m-t
+{
+    margin-top: 30px;
+}
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  position: relative;
+  z-index: 100;
+}
+
+#search-input {
+  width: 90vw;
+  max-width: 600px;
+  padding: 14px 20px 14px 48px; /* padding-left for icon */
+  border: 2px solid #ff0000;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+#search-input::placeholder {
+  color: #ff4d4d;
+  font-style: italic;
+}
+
+#search-input:focus {
+  border-color: #ff1a1a;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+.badge
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffd500; 
+    color: rgb(0, 0, 0);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 1; /* Ensures badge stays above the image */
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+.here
+{
+  color: #ff0000;
+  text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.here:hover
+{
+  color: #ffd500;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.popup-box h2 {
+  margin-top: 0;
+}
+
+.popup-box p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.agree {
+  background-color: #5bef60;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.disagree {
+  background-color: #ee372a;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.agree:hover {
+  background-color: #00ff08;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.disagree:hover {
+  background-color: #ff1100;
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+
+.popup-box p{
+  font-family: Arial;
+}
+.popup-box p a{
+  color: red;
+}
+

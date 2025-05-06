@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Id</title>
+    <link rel="stylesheet" href="id.css">
+</head>
+<body>
+    
+    <div class="back"><a href="create.html">Back</a></div>
+
+    <div class="main">
+
+    <form
+  action="https://api.web3forms.com/submit"
+  method="POST">
+  <h1>Create Id</h1>
+  <input type="hidden" name="access_key" value="212508ba-9c68-4a40-9a13-b4e0c6d1d4b4"/>
+  <label>
+    Email :
+    <input type="email" name="email">
+  </label>
+
+  <label>
+    Full Name :
+    <input type="text" name="name">
+  </label>
+
+  <label>
+    Username : 
+    <input type="text" name="username">
+  </label>
+
+  <label>
+    Password : 
+    <input type="text" name="password">
+  </label>
+
+  <label>
+    Reason :
+    <input type="text" name="reson">
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+  <p id="message">Your Reason Will Determine By Admin.</p>
+  <p id="message">Your Id Will Be Created In Next Update.</p>
+
+
+</form>
+    </div>
+
+
+</body>
+</html>
